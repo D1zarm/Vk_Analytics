@@ -1,7 +1,7 @@
 # Vk_Analytics
 Collects some users' data from vk.com, builds a machine learning model and predicts users' age by their likes.
 
-<i>All the privacy sensitive date has been removed.</i>
+<i>All the privacy sensitive data has been removed.</i>
 
 <h2>A brief usage instruction:</h2>
 
