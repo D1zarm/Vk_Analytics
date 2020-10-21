@@ -13,4 +13,4 @@ Obtained data sets are then processed by scripts in the 'Dataset' folder.
 
 4) word2vec_learner.py takes texts.csv file, which contains textual posts 'liked' by users, preprocesses the data and learns word representations for these texts.
 5) clusters_learner.py takes the preprocessed textual data, clusterizes it and creates a linear regression model for age prediction. It also generates a 'final_dataset.cav' file which contains basic users' info as well as informaiton on their prefereces ('likes'), which is ready for passing to regression algoritms.
-6) As 'final_dataset.csv' is ready, it's worth to open Regression_model.ipynb to build some regression models. 'text_clustering.ipynb' is used to evaluate a clustering algorithm's perfomance.
+6) As 'final_dataset.csv' is ready, it's worth opening Regression_model.ipynb to build some regression models. 'text_clustering.ipynb' is used to evaluate a clustering algorithm's perfomance.
