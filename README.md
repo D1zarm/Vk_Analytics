@@ -5,12 +5,12 @@ All the privacy sensitive date has been removed.
 
 A brief usage instruction:
 
-1) sample_preparing_main.py takes a list of user ids and filters it out by some criterias
-2) list_parser_main.py takes a filtered list of users and collects data on them from vk.com
+1) sample_preparing_main.py takes a list of user ids and filters it out by some criterias (basically, it verifies users' age by their friends' age distribution and users' sex by their name)
+2) list_parser_main.py takes a filtered list of users and collects data on them from vk.com. The program is multithreaded and is designed to maximize the perfomance.
 3) users_file_parser takes data collected by list_parser_main.py (a json file) and turns it into .csv files: 'photos.csv', 'texts.csv', 'users_info.csv'
 
-Obtained data sets are then processed by scripts in Dataset folder.
+Obtained data sets are then processed by scripts in the 'Dataset' folder.
 
 4) word2vec_learner.py takes texts.csv file, which contains textual posts 'liked' by users, preprocesses the data and learns word representations for these texts.
-5) clusters_learner.py takes the preprocessed textual data, clusterizes it and creates a linear regression model for age prediction. It also generates a 'final_dataset.cav' file which contains basic users' info as well as informaiton on their prefereces, which is ready for passing to regression algoritms.
-6) As 'final_dataset.csv' is ready, it's worth to open Regression_model.ipynb to build some regression models. 'text_clustering.ipynb' is used to evaluate a clustering algorithm's perfomance.  
+5) clusters_learner.py takes the preprocessed textual data, clusterizes it and creates a linear regression model for age prediction. It also generates a 'final_dataset.cav' file which contains basic users' info as well as informaiton on their prefereces ('likes'), which is ready for passing to regression algoritms.
+6) As 'final_dataset.csv' is ready, it's worth to open Regression_model.ipynb to build some regression models. 'text_clustering.ipynb' is used to evaluate a clustering algorithm's perfomance.
