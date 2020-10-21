@@ -1,11 +1,11 @@
 # Vk_Analytics
 Collects some users' data from vk.com, builds a machine learning model and predicts users' age by their likes.
 
-All the privacy sensitive date has been removed.
+<i>All the privacy sensitive date has been removed.</i>
 
-A brief usage instruction:
+<h2>A brief usage instruction:</h2>
 
-1) sample_preparing_main.py takes a list of user ids and filters it out by some criterias (basically, it verifies users' age by their friends' age distribution and users' sex by their name)
+1) sample_preparing_main.py takes a list of user ids and filters it out by some criterias (basically, it verifies users' age by their friends' age distribution and users' sex by their names)
 2) list_parser_main.py takes a filtered list of users and collects data on them from vk.com. The program is multithreaded and is designed to maximize the perfomance.
 3) users_file_parser takes data collected by list_parser_main.py (a json file) and turns it into .csv files: 'photos.csv', 'texts.csv', 'users_info.csv'
 
